@@ -1,173 +1,68 @@
-$(function(){
+$(function () {
 
-    // $('#fullpage').fullpage({
-	// 	autoScrolling:true,
-	// 	scrollHorizontally: true
-	// });
+    /*  $('#fullpage').fullpage({
+         autoScrolling: true,
+         scrollHorizontally: true
+     }); */
 
-    $('.open_btn').on('click', function () {
-        $(this).toggleClass('active').siblings('.over').toggleClass('block');
-    });
+    $(document).ready(function () {
+        var progressPath = document.querySelector('.progress-wrap path');
+        var pathLength = progressPath.getTotalLength();
 
-    let goTop = document.querySelector('.goTop');
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
 
-    goTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    });
-
-    window.addEventListener('scroll', function () {
-        if (this.pageYOffset > 450) {
-            goTop.classList.add('on')
-        } else {
-            goTop.classList.remove('on')
+        var updateProgress = function () {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
         }
-    });
 
-    /* 
-            $(window).resize(function () {
-                if (window.innerWidth > 1022) { 
-    
-                    $('#info').slick(unslick);
-    
-                } else {
-    
-                    $('#info').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                        dots: false,
-                        speed: 500,
-                        autoplay: false,
-                        autoplaySpeed: 3000,
-                        pauseOnHover: true,
-                        infinite: true,
-                        vertical: false,
-                    });
-    
-                }
-    
-            }).resize(); */
+        updateProgress();
+        $(window).scroll(updateProgress);
 
-    var slider = $('#info');
-    var slickOptions = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
-        infinite: true,
-        vertical: false,
-    };
+        var offset = 50;
+        var duration = 550;
 
-    $(window).on('load resize', function () {
-        if ($(window).width() > 1022) {
-            slider.slick('unslick');
-        } else {
-            slider.not('.slick-initialized').slick(slickOptions);
-        }
-    });
-
-    /* 맥주애니메이션 */
-    var container = document.querySelector('.container');
-    var beerStream = document.querySelector('.beerStream');
-    var handle = document.querySelector('.handle');
-    var beerLiquid = document.querySelector('.beerLiquid');
-    var fullGlass = document.querySelector('.fullGlass');
-
-    /* TweenMax.set(container, {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        xPercent: -50,
-        yPercent: -50
-    }) */
-
-    var tl = new TimelineMax({ delay: 1, repeat: -1 });
-    tl.timeScale(2.6)
-    tl.to(handle, 0.3, {
-        rotation: 30,
-        transformOrigin: '50% 90%',
-        ease: Back.easeIn
-    })
-        .fromTo(beerStream, 4, {
-            y: -450
-        }, {
-            y: 250,
-            ease: Linear.easeNone
-        })
-        .to(handle, 0.3, {
-            rotation: 0,
-            ease: Back.easeOut
-        }, '-=2')
-
-        .fromTo(beerLiquid, 4, {
-            y: 200,
-            x: 80
-        }, {
-            y: -15,
-            x: 0
-        }, '-=3.8')
-
-        .staggerTo('.froth circle', 1.6, {
-            attr: {
-                r: '+=15',
-                cy: '-=10'
-            },
-            alpha: 1,
-            ease: Elastic.easeOut.config(1, 0.61)
-        }, 0.1, '-=0.6')
-
-        .staggerTo('.beerBubbles circle', 3, {
-            attr: {
-                cy: '-=100'
-            },
-            ease: Power1.easeIn,
-            alpha: 1
-        }, 0.1, '-=3')
-
-        .to(fullGlass, 2, {
-            attr: {
-                x: -400
-            },
-            ease: Back.easeIn.config(0.5)
-        })
-        .staggerTo('.beerBubbles circle', 0.1, {
-            attr: {
-                cy: '+=100'
-            },
-
-            alpha: 0
-        }, 0)
-        .staggerTo('.froth circle', 0.1, {
-            attr: {
-                r: '-=15',
-                cy: '+=10'
-            },
-            alpha: 0
-        }, 0)
-        .to(fullGlass, 0, {
-            attr: {
-                x: 600
+        jQuery(window).on('scroll', function () {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.progress-wrap').addClass('active-progress');
+            } else {
+                jQuery('.progress-wrap').removeClass('active-progress');
             }
-        })
+        });
 
-        .set(beerLiquid, {
-            x: 0,
-            y: 200
+        jQuery('.progress-wrap').on('click', function (event) {
+            event.preventDefault();
+            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+            return false;
         })
+    });
 
-        .to(fullGlass, 2, {
-            attr: {
-                x: 0
-            },
-            ease: Back.easeOut.config(0.5)
-        })
+    var swiper = new Swiper(".mySwiper", {
+        /* autoPlay: true,
+        speed: 1000, */
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
+    });
 
-        .to(fullGlass, 0.3, {
-            rotation: 16
-        })
+
+
+
+
 
 })
+

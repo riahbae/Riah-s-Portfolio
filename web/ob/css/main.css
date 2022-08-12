@@ -1,0 +1,3079 @@
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%;
+  /* 스크롤바의 길이 */
+  background: #000000;
+  /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+  /*스크롤바 뒷 배경 색상*/
+}
+
+#header {
+  width: 100%;
+  padding: 60px 0 0 0;
+  background-color: #f2c744;
+  position: relative;
+}
+
+#header .logo {
+  width: 60px;
+  padding-left: 10px;
+}
+
+#header .logo img {
+  width: 100%;
+}
+
+.open_btn {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 45px;
+  height: 34px;
+  z-index: 150;
+}
+
+.open_btn span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #000;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.open_btn span:nth-child(1) {
+  top: 0;
+}
+
+.open_btn span:nth-child(2) {
+  top: 13px;
+}
+
+.open_btn span:nth-child(3) {
+  top: 13px;
+}
+
+.open_btn span:nth-child(4) {
+  top: 26px;
+}
+
+.open_btn.active span:nth-child(1) {
+  opacity: 0;
+}
+
+.open_btn.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.open_btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.open_btn.active span:nth-child(4) {
+  opacity: 0;
+}
+
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2c744;
+  text-align: left;
+  display: none;
+  z-index: 100;
+}
+
+.over.block {
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  font-family: "Versa", sans-serif;
+  font-size: 45px;
+  line-height: 2em;
+  transition: all 0.5s;
+}
+
+.menu li:hover a {
+  text-decoration: underline;
+}
+
+/* goTop 버튼 */
+
+.goTop {
+  font-size: 40px;
+  color: #fff;
+  /* 
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    line-height: 50px; */
+  position: fixed;
+  z-index: 60;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: translateY(50px);
+  /* 밑에서 올라오는 효과 */
+  opacity: 0;
+}
+
+.goTop.on {
+  opacity: 1;
+  transform: translateY(0);
+  /* 밑에서 올라오는 효과 */
+  /* 스크롤 했을때 고탑에 클래스명만 설정해주고
+    스크롤 올렸을때 다시 빼주면됨 */
+}
+
+#cassBG {
+  width: 100%;
+  background-color: #f2c744;
+}
+
+#cassBG .cass {
+  width: 100%;
+  /*100vh??*/
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+}
+
+#cassBG .cass > li {
+  text-align: center;
+}
+
+#cassBG .cass .img {
+  position: relative;
+}
+
+#cassBG .cass .img .effect01 {
+  width: 100%;
+}
+
+#cassBG .cass .img .effect01 img {
+  width: 100%;
+}
+
+#cassBG .cass .img .bottle01 {
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cassBG .cass .img .bottle01 img {
+  width: 100%;
+}
+
+/* 스텔라 시작 */
+#stellaBG {
+  width: 100%;
+  background-color: #002e4e;
+}
+
+#stellaBG .stella {
+}
+
+#stellaBG .stella li p {
+  font-family: "Vitro_core";
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 90px 0 40px 0;
+}
+
+#stellaBG .stella li .Slogo {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#stellaBG .stella li .Slogo img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#stellaBG .stella .img {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+#stellaBG .stella .img .Seffect {
+  width: 100%;
+}
+
+#stellaBG .stella .img .Seffect img {
+  width: 100%;
+}
+
+#stellaBG .stella .img .Sbottle {
+  width: 115px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-40%, -50%);
+}
+
+#stellaBG .stella .img .Sbottle img {
+  width: 100%;
+}
+
+/* 호가든 시작 */
+#hoegaardenBG {
+  width: 100%;
+  background-color: #ff6c6c;
+}
+
+.hoegaarden {
+}
+
+.hoegaarden .hoeLogo {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hoegaarden .hoeLogo img {
+  width: 100%;
+  margin: 60px 0 40px 0;
+}
+
+.hoegaarden li p {
+  font-family: "Vitro_core";
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.hoegaarden .img {
+  position: relative;
+}
+
+.hoegaarden .img .effect03 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.hoegaarden .img .effect03 img {
+  width: 100%;
+}
+
+.hoegaarden .img .bottle03 {
+  width: 140px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hoegaarden .img .bottle03 img {
+  width: 100%;
+}
+
+/* 버드와이저 시작 */
+#budweiserBG {
+  width: 100%;
+  background-color: #650024;
+}
+
+.budweiser .budLogo {
+  width: 100%;
+}
+
+.budweiser .budLogo img {
+  width: 100%;
+  margin: 180px 0 150px 0;
+}
+
+.budweiser .img {
+  position: relative;
+}
+
+.budweiser .img .pc_effect04 {
+  display: none;
+}
+
+.budweiser .img .effect04 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.budweiser .img .effect04 img {
+  width: 100%;
+}
+
+.budweiser .img .bottle04 {
+  width: 100%;
+  position: relative;
+}
+
+.budweiser .img .bottle04 img {
+  width: 100%;
+}
+
+#info .box01 {
+  position: relative;
+  margin-bottom: 3px;
+}
+
+#info .box01 .txt {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 5;
+}
+
+#info .box01 .txt .title_pc {
+  display: none;
+}
+
+#info .box01 .txt .title {
+  font-family: "Versa", sans-serif;
+  font-size: 90px;
+  color: #fff;
+}
+
+#info .box01 .txt .sub_title {
+  display: none;
+}
+
+#info .box01 .txt .text {
+  display: none;
+}
+
+#info .box01 .txt .btn {
+  display: none;
+}
+
+#info .box01 .img {
+  width: 100%;
+  height: auto;
+  /* 
+    position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+#info .box01 .img img {
+  width: 100%;
+}
+
+#info .box02 {
+  position: relative;
+  margin-bottom: 3px;
+}
+
+#info .box02 .txt {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 5;
+}
+
+#info .box02 .txt .title {
+  font-family: "Versa", sans-serif;
+  font-size: 90px;
+  color: #fff;
+}
+
+#info .box02 .txt .sub_title {
+  display: none;
+}
+
+#info .box02 .txt .text {
+  display: none;
+}
+
+#info .box02 .txt .btn {
+  display: none;
+}
+
+#info .box02 .img {
+  width: 100%;
+  /* 
+    position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+#info .box02 .img img {
+  width: 100%;
+}
+
+/* 맥주시작 */
+/* body {
+        background-color: #F76161;
+        overflow: hidden;
+    }
+
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+ */
+#contWrap {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.track {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+  height: 30px;
+  border: 1px solid #888888;
+  border-radius: 18px;
+}
+
+.drag {
+  position: absolute;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ededed;
+  border-radius: 50%;
+}
+
+.flame {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+
+/* 맥주 끝 */
+/* BRANDS 시작 */
+#brands {
+  width: 100%;
+}
+
+#brands .btop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+#brands .btop .left {
+  width: 90%;
+  border: 7px solid #000;
+  box-sizing: border-box;
+}
+
+#brands .btop .left .title {
+  padding: 20px 0 0 5px;
+  font-size: 70px;
+  font-weight: normal;
+}
+
+#brands .btop .left .sub_title {
+  padding: 0 0 25px 7px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#brands .btop .left .text {
+  font-family: "S-CoreDream-5Medium";
+  padding: 0 0 20px 7px;
+  letter-spacing: 0.5px;
+  line-height: 1.7em;
+  font-size: 12px;
+}
+
+#brands .btop .left .pc_text {
+  display: none;
+}
+
+#brands .btop .left .btn {
+  margin: 10px 0 30px 10px;
+  display: none;
+}
+
+#brands .btop .left .btn a {
+  font-family: "S-CoreDream-5Medium";
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 7px 8px;
+  margin-right: 15px;
+}
+
+#brands .btop .left .btn a:first-child {
+  background-color: #000;
+  color: #fff;
+}
+
+/* pc brands btn display none 되있음! */
+
+#brands .btop .right {
+  width: 10%;
+  display: flex;
+  border-top: 7px solid #000;
+  border-right: 7px solid #000;
+  border-bottom: 7px solid #000;
+  position: relative;
+}
+
+#brands .btop .right > div {
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+#brands .btop .right .b01 {
+  width: 100%;
+}
+
+#brands .btop .right .b01 img {
+  width: 35px;
+}
+
+#brands .btop .right .b01:hover img {
+  display: none;
+}
+
+#brands .btop .right .b02 {
+  width: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#brands .btop .right .b02 img {
+  width: 100%;
+  display: none;
+}
+
+#brands .btop .right:hover div {
+  background-color: #000;
+}
+
+#brands .btop .right:hover .b02 img {
+  display: block;
+}
+
+#brands .btop .right .b03 {
+  display: none;
+}
+
+#brands .btop .right .b04 {
+  display: none;
+}
+
+/* #brands .btop .right .b03 {
+    width: 35px;
+    display: none;
+}
+
+#brands .btop .right .b03 img {
+    width: 100%;
+} */
+
+/* brands m_btn 시작 */
+#brands .m_btn {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  padding: 15px 10px;
+}
+
+#brands .m_btn a {
+  font-family: "S-CoreDream-5Medium";
+  border: 2px solid #000;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 7px 8px;
+  margin-right: 15px;
+}
+
+#brands .m_btn a:first-child {
+  background-color: #000;
+  color: #fff;
+}
+
+/* can box 시작 */
+#brands .beer01 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #135dbe;
+  overflow: hidden;
+}
+
+#brands .beer01 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer01 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer01 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer01 .can01 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -330px;
+}
+
+#brands .beer01 .can01 img {
+  width: 100%;
+}
+
+#brands .beer02 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #3aaf8c;
+  overflow: hidden;
+}
+
+#brands .beer02 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer02 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer02 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer02 .can02 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -351px;
+}
+
+#brands .beer02 .can02 img {
+  width: 100%;
+}
+
+#brands .beer03 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #00abe0;
+  overflow: hidden;
+}
+
+#brands .beer03 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer03 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer03 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer03 .can03 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -358px;
+}
+
+#brands .beer03 .can03 img {
+  width: 100%;
+}
+
+#brands .beer04 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #b00205;
+  overflow: hidden;
+}
+
+#brands .beer04 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer04 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer04 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer04 .can04 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -176px;
+}
+
+#brands .beer04 .can04 img {
+  width: 100%;
+}
+
+#brands .beer05 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #faf1c7;
+  overflow: hidden;
+}
+
+#brands .beer05 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer05 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer05 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer05 .can05 {
+  width: 310px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -296px;
+}
+
+#brands .beer05 .can05 img {
+  width: 100%;
+}
+
+#brands .beer06 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #0b5198;
+  overflow: hidden;
+}
+
+#brands .beer06 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer06 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer06 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer06 .can06 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -342px;
+}
+
+#brands .beer06 .can06 img {
+  width: 100%;
+}
+
+#brands .beer07 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #f5ca82;
+  overflow: hidden;
+}
+
+#brands .beer07 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer07 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer07 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer07 .can07 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -349px;
+}
+
+#brands .beer07 .can07 img {
+  width: 100%;
+}
+
+#brands .beer08 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #c2e2ec;
+  overflow: hidden;
+}
+
+#brands .beer08 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer08 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer08 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer08 .can08 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -355px;
+}
+
+#brands .beer08 .can08 img {
+  width: 100%;
+}
+
+#brands .beer09 {
+  border-bottom: 7px solid #000;
+  border-left: 7px solid #000;
+  border-right: 7px solid #000;
+  background-color: #35664b;
+  overflow: hidden;
+}
+
+#brands .beer09 .name {
+  border-bottom: 3px solid #000;
+  font-size: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer09 .type {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer09 .alcohol {
+  border-bottom: 3px solid #000;
+  font-size: 30px;
+  line-height: 50px;
+  text-indent: 7px;
+}
+
+#brands .beer09 .can09 {
+  width: 250px;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: -343px;
+}
+
+#brands .beer09 .can09 img {
+  width: 100%;
+}
+
+/* footer 시작 */
+
+#footer {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+
+#footer .company {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 10px 0 20px 12px;
+}
+
+#footer .fsns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .fsns li {
+  width: 70px;
+  cursor: pointer;
+}
+
+#footer .fsns li img {
+  width: 100%;
+}
+
+#footer .fmenu {
+  padding: 30px 0 100px 0;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+#footer .fmenu {
+  font-family: "S-CoreDream-6Bold";
+}
+
+#footer .finfo {
+  display: none;
+}
+
+#footer .flogo {
+  display: none;
+}
+
+#footer .familySite {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#footer .familySite select {
+  width: 150px;
+  height: 26px;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding-left: 8px;
+  outline: none;
+}
+
+/************ 모바일 끝 *************/
+@media all and (min-width: 765px) {
+  #wrap {
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;
+    /* 스크롤바의 너비 */
+  }
+
+  .menu li a {
+    font-size: 50px;
+  }
+
+  /* 카스 시작 */
+
+  #cassBG .cass {
+    height: 100vh;
+    position: relative;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  #cassBG .cass > li {
+  }
+
+  #cassBG .cass .ssaC {
+    position: absolute;
+    width: 220px;
+    bottom: 30%;
+  }
+
+  #cassBG .cass .ssaC img {
+    width: 100%;
+  }
+
+  #cassBG .cass .txt01 {
+    position: absolute;
+    bottom: 48%;
+    left: 23%;
+    width: 90px;
+  }
+
+  #cassBG .cass .txt01 img {
+    width: 100%;
+  }
+
+  #cassBG .cass .img {
+    align-self: center;
+    z-index: 5;
+  }
+
+  #cassBG .cass .img .effect01 {
+    position: static;
+    /* position: absolute;
+        width: 80%; */
+  }
+
+  #cassBG .cass .img .bottle01 {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-left: -20px;
+    z-index: 10;
+  }
+
+  #cassBG .cass .txt02 {
+    position: absolute;
+    top: 25%;
+    right: 12%;
+    width: 220px;
+  }
+
+  #cassBG .cass .txt02 img {
+    width: 100%;
+  }
+
+  #cassBG .cass .Cass {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 230px;
+  }
+
+  #cassBG .cass .Cass img {
+    width: 100%;
+  }
+
+  /* 스텔라 시작 */
+
+  #stellaBG .stella {
+    height: 100vh;
+    position: relative;
+  }
+
+  #stellaBG .stella li {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #stellaBG .stella li p {
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  #stellaBG .stella li .Slogo {
+    width: 50%;
+    margin: 0 0;
+  }
+
+  #stellaBG .stella .img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  #stellaBG .stella .img .Seffect {
+    width: 60%;
+    margin: 0 40%;
+  }
+
+  #stellaBG .stella .img .Sbottle {
+    width: 130px;
+    left: 75%;
+  }
+
+  /* 호가든 시작 */
+  .hoegaarden {
+    height: 100vh;
+    position: relative;
+  }
+
+  .hoegaarden .hoeLogo {
+    width: 50%;
+    margin: 0 0;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .hoegaarden .hoeLogo img {
+  }
+
+  .hoegaarden li p {
+    letter-spacing: 2px;
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  .hoegaarden .img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  .hoegaarden .img .effect03 {
+    width: 90%;
+    margin: 0 10%;
+  }
+
+  .hoegaarden .img .effect03 img {
+    width: 100%;
+  }
+
+  .hoegaarden .img .bottle03 {
+    width: 140px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hoegaarden .img .bottle03 img {
+    width: 100%;
+  }
+
+  /* 버드와이저 시작 */
+
+  .budweiser {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .budweiser .budLogo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .budweiser .budLogo img {
+    margin: 180px 0 0 0;
+  }
+
+  .budweiser .img .effect04 {
+    display: none;
+  }
+
+  .budweiser .img .pc_effect04 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .budweiser .img .pc_effect04 img {
+    width: 100%;
+  }
+
+  .budweiser .img .bottle04 {
+    width: 555px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .budweiser .img .bottle04 img {
+    width: 100%;
+  }
+
+  /* who we are 시작 */
+  #info .box01 {
+    border: 7px solid #000;
+    margin: 10px 10px;
+  }
+
+  #info .box01 .txt {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 5;
+    text-align: right;
+  }
+
+  #info .box01 .txt .title_pc {
+    display: block;
+    font-family: "Versa", sans-serif;
+    font-size: 5em;
+    letter-spacing: 4px;
+    margin: 10px 0;
+  }
+
+  #info .box01 .txt .title_pc span {
+    color: #000;
+  }
+
+  #info .box01 .txt .title {
+    display: none;
+  }
+
+  #info .box01 .txt .sub_title {
+    display: block;
+    font-family: "S-CoreDream-7ExtraBold";
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  #info .box01 .txt .sub_title span {
+    color: #fff;
+  }
+
+  #info .box01 .txt .text {
+    display: block;
+    font-family: "S-CoreDream-4Regular";
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 22px;
+  }
+
+  #info .box01 .txt .btn {
+    display: block;
+    float: right;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: "S-CoreDream-4Regular";
+    margin-top: 20px;
+    transition: all 0.3s;
+  }
+
+  #info .box01 .txt .btn:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  #info .box01 .img {
+    width: 73%;
+    height: auto;
+  }
+
+  #info .box01 .img img {
+    width: 100%;
+  }
+
+  /* esg 시작 */
+  #info .box02 {
+    border: 7px solid #000;
+    margin: 10px 10px;
+  }
+
+  #info .box02 .txt {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 5;
+    text-align: right;
+  }
+
+  #info .box02 .txt .title {
+    font-size: 80px;
+    color: #000;
+    letter-spacing: 4px;
+    margin: 10px 0;
+  }
+
+  #info .box02 .txt .sub_title {
+    display: block;
+    font-family: "S-CoreDream-7ExtraBold";
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  #info .box02 .txt .sub_title span {
+    color: #fff;
+  }
+
+  #info .box02 .txt .text {
+    display: block;
+    font-family: "S-CoreDream-4Regular";
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 25px;
+  }
+
+  #info .box02 .txt .btn {
+    display: block;
+    float: right;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: "S-CoreDream-4Regular";
+    margin-top: 20px;
+    transition: all 0.3s;
+  }
+
+  #info .box02 .txt .btn:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  #info .box02 .img {
+    width: 73%;
+    height: auto;
+  }
+
+  #info .box02 .img img {
+    width: 100%;
+  }
+
+  /* BRANDS 시작 */
+  #brands .btop {
+    margin: 10px 10px 10px 10px;
+  }
+
+  #brands .btop .left {
+    width: 66.66%;
+  }
+
+  #brands .btop .left .title {
+    padding-top: 10px;
+  }
+
+  #brands .btop .left .sub_title {
+    padding-bottom: 15px;
+    font-size: 22px;
+  }
+
+  #brands .btop .left .btn {
+    display: block;
+  }
+
+  #brands .m_btn {
+    display: none;
+  }
+
+  #brands .btop .right {
+    width: 33%;
+  }
+
+  #brands .btop .right > div {
+    padding: 60px 0 0 0;
+    text-align: left;
+  }
+
+  #brands .btop .right .b01 {
+    padding-left: 45px;
+  }
+
+  #brands .btop .right .b01 img {
+    width: 55px;
+  }
+
+  #brands .btop .right .b02 {
+    width: 55px;
+    left: 72px;
+  }
+
+  #brands .btop .right .b03 {
+    display: block;
+    width: 55px;
+    position: absolute;
+    right: 45px;
+  }
+
+  #brands .btop .right .b03 img {
+    width: 100%;
+  }
+
+  #brands .btop .right .b04 {
+    display: block;
+    width: 55px;
+    position: absolute;
+    right: 45px;
+  }
+
+  #brands .btop .right .b04 img {
+    display: none;
+    width: 100%;
+  }
+
+  #brands .btop .right:hover .b04 img {
+    display: block;
+  }
+
+  /* can box 시작 */
+  #brands .beerBox01 {
+    width: 100%;
+    display: flex;
+    /* 
+        margin: 0 10px 0 10px; */
+  }
+
+  #brands .beer01 {
+    border-top: 7px solid #000;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  #brands .beer01 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer01 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer01 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer01 .can01 {
+    width: 150px;
+    margin-bottom: -152px;
+  }
+
+  #brands .beer01 .can01 img {
+    width: 100%;
+  }
+
+  #brands .beer02 {
+    border-top: 7px solid #000;
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+  #brands .beer02 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer02 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer02 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer02 .can02 {
+    width: 150px;
+    margin-bottom: -152px;
+  }
+
+  #brands .beer02 .can02 img {
+    width: 100%;
+  }
+
+  #brands .beer03 {
+    border-top: 7px solid #000;
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  #brands .beer03 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer03 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer03 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer03 .can03 {
+    width: 150px;
+    margin-bottom: -152px;
+  }
+
+  #brands .beer03 .can03 img {
+    width: 100%;
+  }
+
+  /* 두번째 박스 */
+  #brands .beerBox02 {
+    display: flex;
+  }
+
+  #brands .beer04 {
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  #brands .beer04 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer04 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer04 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer04 .can04 {
+    width: 150px;
+    margin-bottom: -142px;
+  }
+
+  #brands .beer04 .can04 img {
+    width: 100%;
+  }
+
+  #brands .beer05 {
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+  #brands .beer05 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer05 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer05 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer05 .can05 {
+    width: 190px;
+    margin-bottom: -142px;
+  }
+
+  #brands .beer05 .can05 img {
+    width: 100%;
+  }
+
+  #brands .beer06 {
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  #brands .beer06 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer06 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer06 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer06 .can06 {
+    width: 150px;
+    margin-bottom: -142px;
+  }
+
+  #brands .beer06 .can06 img {
+    width: 100%;
+  }
+
+  /* 세번째 박스 */
+  #brands .beerBox03 {
+    display: flex;
+  }
+
+  #brands .beer07 {
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  #brands .beer07 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer07 .type {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  #brands .beer07 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer07 .can07 {
+    width: 150px;
+    margin-bottom: -150px;
+  }
+
+  #brands .beer07 .can07 img {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+
+  #brands .beer08 {
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+  #brands .beer08 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer08 .type {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  #brands .beer08 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer08 .can08 {
+    width: 150px;
+    margin-bottom: -150px;
+  }
+
+  #brands .beer08 .can08 img {
+    width: 100%;
+  }
+
+  #brands .beer09 {
+    border-left: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  #brands .beer09 .name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  #brands .beer09 .type {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer09 .alcohol {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  #brands .beer09 .can09 {
+    width: 150px;
+    margin-bottom: -150px;
+  }
+
+  #brands .beer09 .can09 img {
+    width: 100%;
+  }
+
+  /* footer 시작 */
+
+  #footer {
+    width: calc(100% - 20px);
+    margin: 0 10px 10px 10px;
+  }
+
+  #footer .footerin {
+    background-color: #fff;
+    border-left: 7px solid #000;
+    border-right: 7px solid #000;
+    border-bottom: 7px solid #000;
+    box-sizing: border-box;
+  }
+
+  #footer .company {
+    color: #000;
+    padding: 20px 0 20px 10px;
+    font-size: 45px;
+  }
+
+  #footer .fsns {
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+  }
+
+  #footer .fsns li {
+    margin-right: 20px;
+  }
+
+  #footer .fmenu {
+    color: #000;
+    font-size: 18px;
+    justify-content: left;
+    padding: 30px 0 20px 10px;
+  }
+
+  #footer .fmenu li {
+    margin-right: 20px;
+  }
+
+  #footer .finfo {
+    display: block;
+    font-family: "S-CoreDream-4Regular";
+    padding: 0 0 20px 10px;
+    line-height: 30px;
+  }
+
+  #footer .flogo {
+    display: block;
+    width: 30%;
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+  }
+
+  #footer .flogo img {
+    width: 100%;
+  }
+
+  #footer .familySite {
+    bottom: 40px;
+  }
+
+  #footer .familySite select {
+    width: 200px;
+    background-color: #fff;
+    color: rgb(141, 141, 141);
+    border: 1px solid rgb(141, 141, 141);
+  }
+}
+
+/************ 테블릿 끝 *************/
+
+@media all and (min-width: 1022px) {
+  body::-webkit-scrollbar {
+    width: 14px;
+    /* 스크롤바의 너비 */
+  }
+
+  .menu li a {
+    line-height: 130px;
+  }
+
+  #header {
+    padding: 30px 0 0 0;
+  }
+
+  #header .logo {
+    width: 45px;
+    padding-left: 30px;
+  }
+
+  .open_btn {
+    top: 30px;
+    right: 30px;
+    width: 35px;
+  }
+
+  /* 카스 시작 */
+  /* #cassBG .cass {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    #cassBG .cass .ssaC {
+        width: 200px;
+        bottom: 35%;
+        margin-left: 20px;
+    }
+
+    #cassBG .cass .txt01 {
+        bottom: 42%;
+        width: 85px;
+        width: 110px;
+    }
+
+    #cassBG .cass .img .effect01 {
+        width: 63%;
+        margin: 0 0 0 160px;
+    }
+
+    #cassBG .cass .img .bottle01 {
+        width: 160px;
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+
+    #cassBG .cass .txt02 {
+        width: 220px;
+        top: 30%;
+        right: 25%;
+    }
+
+    #cassBG .cass .Cass {
+        top: 22%;
+        width: 220px;
+    } */
+  #cassBG .cass {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  #cassBG .cass .txt01 {
+    bottom: 46%;
+  }
+
+  #cassBG .cass .img .effect01 {
+    width: 80%;
+    margin-left: 50px;
+    padding-top: 50px;
+  }
+
+  #cassBG .cass .img .bottle01 {
+    padding-top: 100px;
+  }
+
+  #cassBG .cass .txt02 {
+    right: 10%;
+  }
+
+  #cassBG .cass .Cass {
+    top: 12%;
+  }
+
+  #stellaBG .stella {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  #stellaBG .stella li {
+    position: static;
+  }
+
+  #stellaBG .stella .textin {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #stellaBG .stella li p {
+    font-size: 20px;
+    margin-left: 10px;
+    opacity: 0.9;
+    padding: 0 0 40px 0;
+  }
+
+  #stellaBG .stella li .Slogo {
+    width: 45%;
+  }
+
+  #stellaBG .stella .img {
+    position: static;
+  }
+
+  #stellaBG .stella .img .Seffect {
+    width: 55%;
+    margin: 0 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  #stellaBG .stella .img .Sbottle {
+    top: 250px;
+    transform: translateY(0);
+    left: 72%;
+    bottom: 0;
+    width: 140px;
+  }
+
+  .hoegaarden {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .hoegaarden .hoeLogo {
+    width: 48%;
+  }
+
+  .hoegaarden li p {
+    font-size: 20px;
+    margin-left: 5px;
+    opacity: 0.9;
+  }
+
+  .hoegaarden .img .effect03 {
+    width: 110%;
+    margin: 0 0;
+  }
+
+  .hoegaarden .img .bottle03 {
+    width: 170px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #budweiserBG {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .budweiser {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .budweiser .budLogo {
+    width: 75%;
+  }
+
+  .budweiser .img {
+    position: static;
+  }
+
+  .budweiser .img .pc_effect04 {
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+  }
+
+  .budweiser .img .bottle04 {
+    width: 555px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* info 시작 */
+
+  #info {
+    width: 100%;
+    display: flex;
+  }
+
+  #info .box01 {
+    width: 50%;
+    margin: 10px 5px 10px 10px;
+  }
+
+  #info .box01 .txt .title_pc {
+    font-size: 300%;
+    letter-spacing: 2px;
+    margin: 20px 0 5px 0;
+  }
+
+  #info .box01 .txt .sub_title {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  #info .box01 .txt .text {
+    display: none;
+  }
+
+  #info .box02 {
+    width: 50%;
+    margin: 10px 10px 10px 5px;
+  }
+
+  #info .box02 .txt .title {
+    font-size: 300%;
+    letter-spacing: 2px;
+    margin: 20px 0 5px 0;
+  }
+
+  #info .box02 .txt .sub_title {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  #info .box02 .txt .text {
+    display: none;
+  }
+
+  #brands .btop .right .b01 {
+    padding-left: 75px;
+  }
+  #brands .btop .right .b02 {
+    left: 102px;
+  }
+  #brands .btop .right .b03 {
+    right: 75px;
+  }
+  #brands .btop .right .b04 {
+    right: 75px;
+  }
+
+  #brands .beer01 .can01 {
+    width: 200px;
+    margin-bottom: -250px;
+  }
+  #brands .beer02 .can02 {
+    width: 200px;
+    margin-bottom: -271px;
+  }
+  #brands .beer03 .can03 {
+    width: 200px;
+    margin-bottom: -278px;
+  }
+  #brands .beer04 .can04 {
+    width: 200px;
+    margin-bottom: -224px;
+  }
+  #brands .beer05 .can05 {
+    width: 240px;
+    padding-top: 30px;
+    margin-bottom: -245px;
+  }
+  #brands .beer06 .can06 {
+    width: 200px;
+    margin-bottom: -252px;
+  }
+  #brands .beer07 .can07 {
+    width: 200px;
+    margin-bottom: -254px;
+  }
+  #brands .beer08 .can08 {
+    width: 200px;
+    margin-bottom: -275px;
+  }
+  #brands .beer09 .can09 {
+    width: 200px;
+    margin-bottom: -282px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  #cassBG .cass .txt02 {
+    right: 15%;
+    top: 30%;
+  }
+
+  #cassBG .cass .Cass {
+    top: 15%;
+  }
+
+  #info .box01 {
+    margin: 10px 5px 10px 10px;
+  }
+
+  #info .box01 .txt .title_pc {
+    font-size: 380%;
+    margin: 10px 0 5px 0;
+  }
+
+  #info .box01 .txt .sub_title {
+    font-size: 22px;
+  }
+
+  #info .box01 .txt .text {
+    display: block;
+  }
+
+  #info .box01 .txt .btn {
+    margin-top: 10px;
+  }
+
+  #info .box02 {
+    margin: 10px 10px 10px 5px;
+  }
+
+  #info .box02 .txt .title {
+    font-size: 380%;
+    margin: 10px 0 5px 0;
+  }
+
+  #info .box02 .txt .sub_title {
+    font-size: 22px;
+  }
+
+  #info .box02 .txt .text {
+    display: block;
+  }
+
+  #info .box02 .txt .btn {
+    margin-top: 10px;
+  }
+
+  #brands .btop .left .title {
+    font-size: 6vw;
+    padding: 30px 0 0 20px;
+  }
+
+  #brands .btop .left .sub_title {
+    padding-bottom: 15px;
+    padding: 5px 0 40px 20px;
+    font-size: 2vw;
+  }
+
+  #brands .btop .left .text {
+    display: none;
+  }
+
+  #brands .btop .left .pc_text {
+    display: block;
+    font-family: "S-CoreDream-4Regular";
+    padding: 0 0 70px 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.7em;
+    font-size: 1vw;
+  }
+
+  #brands .btop .left .btn {
+    margin: 10px 0 50px 20px;
+  }
+
+  #brands .btop .left .btn a {
+    font-family: "S-CoreDream-5Medium";
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 18px;
+    margin-right: 15px;
+  }
+
+  #brands .btop .left .btn a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  #brands .btop .right > div {
+    padding: 100px 0 0 0;
+  }
+
+  #brands .btop .right .b01 {
+    padding-left: 110px;
+  }
+
+  #brands .btop .right .b01 img {
+    width: 80px;
+  }
+
+  #brands .btop .right .b02 {
+    width: 80px;
+    left: 150px;
+  }
+
+  #brands .btop .right .b03 {
+    width: 80px;
+    position: absolute;
+    right: 110px;
+  }
+
+  #brands .btop .right .b04 {
+    width: 80px;
+    position: absolute;
+    right: 110px;
+  }
+
+  #brands .beer01 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer01 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer01 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer01 .can01 {
+    width: 250px;
+    margin-bottom: -300px;
+    padding-top: 70px;
+  }
+  #brands .beer02 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer02 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer02 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer02 .can02 {
+    width: 250px;
+    margin-bottom: -321px;
+    padding-top: 70px;
+  }
+  #brands .beer03 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer03 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer03 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer03 .can03 {
+    width: 250px;
+    margin-bottom: -328px;
+    padding-top: 70px;
+  }
+  #brands .beer04 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer04 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer04 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer04 .can04 {
+    width: 250px;
+    margin-bottom: -146px;
+    padding-top: 70px;
+  }
+  #brands .beer05 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer05 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer05 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer05 .can05 {
+    width: 300px;
+    padding-top: 55px;
+    margin-bottom: -225px;
+  }
+  #brands .beer06 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer06 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer06 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer06 .can06 {
+    width: 250px;
+    margin-bottom: -382px;
+    padding-top: 70px;
+  }
+  #brands .beer07 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer07 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer07 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer07 .can07 {
+    width: 250px;
+    margin-bottom: -307px;
+    padding-top: 70px;
+  }
+  #brands .beer08 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer08 .type {
+    font-size: 28px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer08 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer08 .can08 {
+    width: 250px;
+    margin-bottom: -328px;
+    padding-top: 70px;
+  }
+  #brands .beer09 .name {
+    font-size: 55px;
+    line-height: 70px;
+    text-indent: 20px;
+  }
+  #brands .beer09 .type {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer09 .alcohol {
+    font-size: 30px;
+    line-height: 55px;
+    text-indent: 20px;
+  }
+  #brands .beer09 .can09 {
+    width: 250px;
+    margin-bottom: -335px;
+    padding-top: 70px;
+  }
+
+  #footer .company {
+    padding: 10px 0 20px 20px;
+  }
+  #footer .fsns {
+    padding-left: 20px;
+  }
+  #footer .fmenu {
+    padding-left: 20px;
+  }
+  #footer .finfo {
+    padding-left: 20px;
+  }
+  /* beer hover 시작 */
+  
+  #brands .beer01 {
+    position: relative;
+  }
+  #brands .beer01 .can01 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer01 .can01:hover p {
+    bottom: -45px;
+  }
+  #brands .beer01 .can01 img {
+    transition: all 0.5s;
+  }
+  #brands .beer01 .can01:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer02 {
+    position: relative;
+  }
+  #brands .beer02 .can02 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer02 .can02:hover p {
+    bottom: -45px;
+  }
+  #brands .beer02 .can02 img {
+    transition: all 0.5s;
+  }
+  #brands .beer02 .can02:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer03 {
+    position: relative;
+  }
+  #brands .beer03 .can03 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer03 .can03:hover p {
+    bottom: -45px;
+  }
+  #brands .beer03 .can03 img {
+    transition: all 0.5s;
+  }
+  #brands .beer03 .can03:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer04 {
+    position: relative;
+  }
+  #brands .beer04 .can04 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer04 .can04:hover p {
+    bottom: -45px;
+  }
+  #brands .beer04 .can04 img {
+    transition: all 0.5s;
+  }
+  #brands .beer04 .can04:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer05 {
+    position: relative;
+  }
+  #brands .beer05 .can05>p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer05 .can05:hover>p {
+    bottom: -45px;
+  }
+  #brands .beer05 .can05>img {
+    transition: all 0.5s;
+  }
+  #brands .beer05 .can05:hover>img {
+    margin-top: -25px;
+  }
+  #brands .beer06 {
+    position: relative;
+  }
+  #brands .beer06 .can06 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer06 .can06:hover p {
+    bottom: -45px;
+  }
+  #brands .beer06 .can06 img {
+    transition: all 0.5s;
+  }
+  #brands .beer06 .can06:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer07 {
+    position: relative;
+  }
+  #brands .beer07 .can07 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer07 .can07:hover p {
+    bottom: -45px;
+  }
+  #brands .beer07 .can07 img {
+    transition: all 0.5s;
+  }
+  #brands .beer07 .can07:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer08 {
+    position: relative;
+  }
+  #brands .beer08 .can08 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer08 .can08:hover p {
+    bottom: -45px;
+  }
+  #brands .beer08 .can08 img {
+    transition: all 0.5s;
+  }
+  #brands .beer08 .can08:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer09 {
+    position: relative;
+  }
+  #brands .beer09 .can09 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer09 .can09:hover p {
+    bottom: -45px;
+  }
+  #brands .beer09 .can09 img {
+    transition: all 0.5s;
+  }
+  #brands .beer09 .can09:hover img {
+    margin-top: -25px;
+  }
+}
+
+@media all and (min-width: 1720px) {
+  #cassBG .cass .ssaC {
+    width: 240px;
+    bottom: 35%;
+    margin-left: 20px;
+  }
+
+  #cassBG .cass .txt01 {
+    bottom: 42%;
+    width: 110px;
+  }
+
+  #cassBG .cass .img .effect01 {
+    width: 63%;
+    margin: 0 0 0 160px;
+    padding-top: 50px;
+  }
+
+  #cassBG .cass .img .bottle01 {
+    width: 170px;
+    margin-left: -70px;
+    padding-top: 100px;
+  }
+
+  #cassBG .cass .txt02 {
+    width: 260px;
+    top: 30%;
+    right: 23%;
+  }
+
+  #cassBG .cass .Cass {
+    top: 22%;
+    width: 250px;
+  }
+
+  .budweiser .budLogo {
+    width: 65%;
+  }
+
+  .budweiser .img .pc_effect04 {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -150px;
+  }
+
+  #info .box01 .txt .title_pc {
+    margin: 20px 0 10px 0;
+  }
+
+  #info .box01 .txt .sub_title {
+    font-size: 22px;
+  }
+
+  #info .box01 .txt .text {
+    display: block;
+    line-height: 24px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #info .box01 .txt .btn {
+    margin-top: 20px;
+  }
+
+  #info .box02 .txt .title {
+    margin: 20px 0 10px 0;
+  }
+
+  #info .box02 .txt .sub_title {
+    font-size: 22px;
+  }
+
+  #info .box02 .txt .text {
+    display: block;
+    line-height: 24px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #info .box02 .txt .btn {
+    margin-top: 20px;
+  }
+  #brands .beer01 {
+    position: relative;
+  }
+  #brands .beer01 .can01 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer01 .can01:hover p {
+    bottom: -45px;
+  }
+  #brands .beer01 .can01 img {
+    transition: all 0.5s;
+  }
+  #brands .beer01 .can01:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer02 {
+    position: relative;
+  }
+  #brands .beer02 .can02 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer02 .can02:hover p {
+    bottom: -45px;
+  }
+  #brands .beer02 .can02 img {
+    transition: all 0.5s;
+  }
+  #brands .beer02 .can02:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer03 {
+    position: relative;
+  }
+  #brands .beer03 .can03 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer03 .can03:hover p {
+    bottom: -45px;
+  }
+  #brands .beer03 .can03 img {
+    transition: all 0.5s;
+  }
+  #brands .beer03 .can03:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer04 {
+    position: relative;
+  }
+  #brands .beer04 .can04 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer04 .can04:hover p {
+    bottom: -45px;
+  }
+  #brands .beer04 .can04 img {
+    transition: all 0.5s;
+  }
+  #brands .beer04 .can04:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer05 {
+    position: relative;
+  }
+  #brands .beer05 .can05>p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer05 .can05:hover>p {
+    bottom: -45px;
+  }
+  #brands .beer05 .can05>img {
+    transition: all 0.5s;
+  }
+  #brands .beer05 .can05:hover>img {
+    margin-top: -25px;
+  }
+  #brands .beer06 {
+    position: relative;
+  }
+  #brands .beer06 .can06 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer06 .can06:hover p {
+    bottom: -45px;
+  }
+  #brands .beer06 .can06 img {
+    transition: all 0.5s;
+  }
+  #brands .beer06 .can06:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer07 {
+    position: relative;
+  }
+  #brands .beer07 .can07 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer07 .can07:hover p {
+    bottom: -45px;
+  }
+  #brands .beer07 .can07 img {
+    transition: all 0.5s;
+  }
+  #brands .beer07 .can07:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer08 {
+    position: relative;
+  }
+  #brands .beer08 .can08 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer08 .can08:hover p {
+    bottom: -45px;
+  }
+  #brands .beer08 .can08 img {
+    transition: all 0.5s;
+  }
+  #brands .beer08 .can08:hover img {
+    margin-top: -25px;
+  }
+  #brands .beer09 {
+    position: relative;
+  }
+  #brands .beer09 .can09 p {
+    width: 245px;
+    height: 90px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #brands .beer09 .can09:hover p {
+    bottom: -45px;
+  }
+  #brands .beer09 .can09 img {
+    transition: all 0.5s;
+  }
+  #brands .beer09 .can09:hover img {
+    margin-top: -25px;
+  }
+}
