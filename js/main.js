@@ -1,9 +1,9 @@
 $(function () {
 
-    /*  $('#fullpage').fullpage({
-         autoScrolling: true,
-         scrollHorizontally: true
-     }); */
+    $('#fullpage').fullpage({
+        autoScrolling: true,
+        scrollHorizontally: true
+    });
 
     $(document).ready(function () {
         var progressPath = document.querySelector('.progress-wrap path');

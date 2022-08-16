@@ -7,7 +7,6 @@
   width: 100%;
   height: 100vh;
   background-color: #0d0722;
-  ;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -15,7 +14,7 @@
   justify-content: center;
   overflow: hidden;
   color: #fff;
-  font-family: 'Vitro_core';
+  font-family: "Vitro_core";
   font-size: 24px;
   animation: fadeIn 500ms reverse;
 }
@@ -51,7 +50,7 @@ body {
 
 .gooey:before,
 .gooey:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   display: block;
@@ -62,12 +61,14 @@ body {
   box-shadow: 5px 5px 89px rgba(0, 102, 255, 0.21);
   will-change: border-radius, transform, opacity;
   animation-delay: 200ms;
-  background-image: linear-gradient(120deg, rgba(255, 0, 119, 0.733) 0%, rgba(0, 103, 255, .89) 100%);
+  background-image: linear-gradient(120deg,
+      rgba(255, 0, 119, 0.733) 0%,
+      rgba(0, 103, 255, 0.89) 100%);
 }
 
 .gooey:before {
   animation: morph 3s linear infinite;
-  opacity: .21;
+  opacity: 0.21;
   animation-duration: 1.5s;
 }
 
@@ -76,17 +77,18 @@ body {
   text-align: center;
   animation: morph 3s linear infinite;
   animation-delay: 400ms;
-  opacity: .89;
+  opacity: 0.89;
   text-align: center;
   font-size: 40px;
-  line-height: 2em;
 }
 
 .text p {
+  font-family: 'Pretendard-Bold';
   letter-spacing: 2px;
 }
 
 .text p span {
+  font-family: 'PyeongChangPeace-Bold';
   font-size: 90px;
   line-height: 1.8em;
 }
@@ -105,7 +107,7 @@ body {
   }
 
   50% {
-    opacity: .89;
+    opacity: 0.89;
     transform: translate3d(0, 0, 0) rotateZ(0.01deg);
   }
 
@@ -121,8 +123,6 @@ body {
     opacity: 0;
   }
 }
-
-
 
 /* 스크롤 아이콘 애니메이션 */
 .scrolldown {
@@ -159,20 +159,20 @@ body {
 }
 
 .scrolldown .unu {
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;
 }
 
 .scrolldown .doi {
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
 }
 
 .scrolldown .trei {
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
   -webkit-animation-direction: alternate;
 }
 
@@ -230,13 +230,12 @@ body {
 }
 
 @-webkit-keyframes mouse-scroll {
-
   0% {
     opacity: 0;
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -245,13 +244,12 @@ body {
 }
 
 @-moz-keyframes mouse-scroll {
-
   0% {
     opacity: 0;
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -260,13 +258,12 @@ body {
 }
 
 @-o-keyframes mouse-scroll {
-
   0% {
     opacity: 0;
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -275,13 +272,12 @@ body {
 }
 
 @keyframes mouse-scroll {
-
   0% {
     opacity: 0;
   }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   100% {
@@ -317,7 +313,7 @@ body {
   align-items: center;
   cursor: pointer;
   margin-bottom: 15px;
-  color: #00ffffa6;
+  color: #ff0077c9;
   font-weight: bold;
   /* text-shadow: 1px 1px 2px gray; */
   position: relative;
@@ -355,10 +351,7 @@ body {
   transition: 0.4s all;
 }
 
-
-
 /* go top 버튼 */
-
 
 @-webkit-keyframes border-transform {
 
@@ -402,7 +395,7 @@ body {
   display: block;
   border-radius: 50px;
   box-shadow: inset 0 0 0 2px #d0c5fa;
-  z-index: 10000;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
@@ -418,8 +411,8 @@ body {
 
 .progress-wrap::after {
   position: absolute;
-  font-family: 'unicons';
-  content: '\ebb6';
+  font-family: "unicons";
+  content: "\ebb6";
   text-align: center;
   line-height: 50px;
   font-size: 26px;
@@ -430,7 +423,7 @@ body {
   width: 50px;
   cursor: pointer;
   display: block;
-  z-index: 1;
+  z-index: 1000;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -441,8 +434,8 @@ body {
 
 .progress-wrap::before {
   position: absolute;
-  font-family: 'unicons';
-  content: '\ebb6';
+  font-family: "unicons";
+  content: "\ebb6";
   text-align: center;
   line-height: 50px;
   font-size: 26px;
@@ -456,7 +449,7 @@ body {
   width: 50px;
   cursor: pointer;
   display: block;
-  z-index: 2;
+  z-index: 2000;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -486,14 +479,21 @@ body {
 }
 
 #intro .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #intro .center {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -501,14 +501,14 @@ body {
 }
 
 #intro .center .title .tit01 {
-  margin-bottom: 20px;
   text-align: center;
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 40px;
   color: #001535;
 }
 
 #intro .center .title .tit01 span {
+  font-family: 'PyeongChangPeace-Bold';
   font-size: 60px;
   background: linear-gradient(to right, #1fffff 0%, #ff00d4 100%);
   -webkit-background-clip: text;
@@ -539,12 +539,14 @@ body {
 
 #intro .center .myself .Left .info li {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #intro .center .myself .Left .info li:first-child {
+  font-size: 26px;
   font-weight: bold;
   letter-spacing: 1px;
+  padding-top: 10px;
 }
 
 #intro .center .myself .Left .info li:last-child {
@@ -552,19 +554,20 @@ body {
 }
 
 #intro .center .myself .Middle {
-  margin-top: 70px;
+  margin-top: 80px;
   letter-spacing: 1px;
+  margin-left: 50px;
 }
 
 #intro .center .myself .Middle .exp>p {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: #001535;
   margin-bottom: 15px;
 }
 
 #intro .center .myself .Middle .edu>p {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: #001535;
   margin-bottom: 15px;
@@ -582,15 +585,15 @@ body {
 }
 
 #intro .center .myself .Middle .date {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   display: block;
   width: 72px;
 }
 
 #intro .center .myself .Middle .place {
-  font-size: 16px;
-  margin-left: 10px;
+  font-size: 17px;
+  margin-left: 20px;
 }
 
 #intro .center .myself .Middle .edu {
@@ -643,7 +646,12 @@ body {
 
 #intro .center>.sub_title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+#intro .center>.sub_title span {
+  font-family: 'Pretendard-Black';
 }
 
 /* project01 시작 */
@@ -655,8 +663,15 @@ body {
 }
 
 #project01 .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #project01 .center {
@@ -696,8 +711,8 @@ body {
 }
 
 #project01 .center .info .T04 {
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 35px;
   color: #001535;
   margin-bottom: 20px;
 }
@@ -707,10 +722,10 @@ body {
 }
 
 #project01 .center .info .T05 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 2em;
+  line-height: 35px;
   text-align: justify;
   width: 420px;
 }
@@ -840,8 +855,15 @@ body {
 }
 
 #project02 .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #project02 .center {
@@ -881,8 +903,8 @@ body {
 }
 
 #project02 .center .info .T04 {
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 35px;
   color: #001535;
   margin-bottom: 20px;
 }
@@ -892,10 +914,10 @@ body {
 }
 
 #project02 .center .info .T05 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 2em;
+  line-height: 35px;
   text-align: justify;
   width: 420px;
 }
@@ -1025,8 +1047,15 @@ body {
 }
 
 #project03 .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #project03 .center {
@@ -1066,8 +1095,8 @@ body {
 }
 
 #project03 .center .info .T04 {
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 35px;
   color: #001535;
   margin-bottom: 20px;
 }
@@ -1077,10 +1106,10 @@ body {
 }
 
 #project03 .center .info .T05 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 2em;
+  line-height: 35px;
   text-align: justify;
   width: 420px;
 }
@@ -1210,8 +1239,15 @@ body {
 }
 
 #project04 .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #project04 .center {
@@ -1251,8 +1287,8 @@ body {
 }
 
 #project04 .center .info .T04 {
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 35px;
   color: #001535;
   margin-bottom: 20px;
 }
@@ -1262,10 +1298,10 @@ body {
 }
 
 #project04 .center .info .T05 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 2em;
+  line-height: 35px;
   text-align: justify;
   width: 420px;
 }
@@ -1396,8 +1432,15 @@ body {
 }
 
 #project05 .L_txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 65px;
   margin-left: 69px;
+  font-family: 'Pretendard-ExtraBold';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff007757;
 }
 
 #project05 .center {
@@ -1437,8 +1480,8 @@ body {
 }
 
 #project05 .center .info .T04 {
-  font-family: 'Vitro_core';
-  font-size: 30px;
+  font-family: 'Pretendard-Black';
+  font-size: 35px;
   color: #001535;
   margin-bottom: 20px;
 }
@@ -1448,10 +1491,10 @@ body {
 }
 
 #project05 .center .info .T05 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 2em;
+  line-height: 35px;
   text-align: justify;
   width: 420px;
 }
@@ -1525,7 +1568,6 @@ body {
   padding: 0;
 }
  */
-
 
 .swiperwrap {
   position: absolute;
@@ -1618,7 +1660,7 @@ body {
 
 #contact .t_text span {
   font-size: 60px;
-  font-family: 'Vitro_core';
+  font-family: 'Pretendard-Black';
   background: linear-gradient(to right, #1fffff 0%, #ff00d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1664,7 +1706,8 @@ body {
 }
 
 #contact .number .my {
-  font-family: 'Vitro_core';
+  margin-top: 5px;
+  font-family: 'Pretendard-Black';
   background: linear-gradient(to right, #1fffff 0%, #ff00d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
