@@ -88,7 +88,7 @@ body {
 }
 
 .text p span {
-  font-family: 'PyeongChangPeace-Bold';
+  font-family: 'Lobster', cursive;
   font-size: 90px;
   line-height: 1.8em;
 }
@@ -704,7 +704,7 @@ body {
 }
 
 #project01 .center .info .T03 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333333;
   margin-bottom: 20px;
   line-height: 20px;
@@ -722,10 +722,10 @@ body {
 }
 
 #project01 .center .info .T05 {
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 1.5;
   text-align: justify;
   width: 420px;
 }
@@ -896,7 +896,7 @@ body {
 }
 
 #project02 .center .info .T03 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333333;
   margin-bottom: 20px;
   line-height: 20px;
@@ -914,10 +914,10 @@ body {
 }
 
 #project02 .center .info .T05 {
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 1.5;
   text-align: justify;
   width: 420px;
 }
@@ -1088,7 +1088,7 @@ body {
 }
 
 #project03 .center .info .T03 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333333;
   margin-bottom: 20px;
   line-height: 20px;
@@ -1106,10 +1106,10 @@ body {
 }
 
 #project03 .center .info .T05 {
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 1.5;
   text-align: justify;
   width: 420px;
 }
@@ -1280,7 +1280,7 @@ body {
 }
 
 #project04 .center .info .T03 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333333;
   margin-bottom: 20px;
   line-height: 20px;
@@ -1298,10 +1298,10 @@ body {
 }
 
 #project04 .center .info .T05 {
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 1.5;
   text-align: justify;
   width: 420px;
 }
@@ -1473,7 +1473,7 @@ body {
 }
 
 #project05 .center .info .T03 {
-  font-size: 15px;
+  font-size: 13px;
   color: #333333;
   margin-bottom: 20px;
   line-height: 20px;
@@ -1491,10 +1491,10 @@ body {
 }
 
 #project05 .center .info .T05 {
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 1.5;
   text-align: justify;
   width: 420px;
 }
@@ -1681,6 +1681,14 @@ body {
   width: 900px;
   margin-left: 600px;
   margin-top: -70px;
+  animation: rotate_image 80s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #contact .space_bg img {
@@ -1711,4 +1719,8 @@ body {
   background: linear-gradient(to right, #1fffff 0%, #ff00d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.fp-watermark {
+  display: none;
 }

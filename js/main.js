@@ -2,8 +2,12 @@ $(function () {
 
     $('#fullpage').fullpage({
         autoScrolling: true,
-        scrollHorizontally: true
+        scrollHorizontally: true,
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'lastPage'],
+        // menu: '#R_menu',
+        // navigation: false,
     });
+
 
     $(document).ready(function () {
         var progressPath = document.querySelector('.progress-wrap path');
@@ -60,6 +64,7 @@ $(function () {
     });
 
 
+    $(document).ready(function () { $('#btn1').click(function () { var offset = $('#div1').offset(); $('html').animate({ scrollTop: offset.top }, 400); }); });
 
 
 
