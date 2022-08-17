@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/fd345f3650.js" crossorigin="anonymous"></script>
 </head>
@@ -174,8 +175,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album09.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Dangerously</p>
+                                    <p class="artist">Charlie Puth</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -184,8 +185,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album10.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Havana</p>
+                                    <p class="artist">Camila Cabello</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -194,8 +195,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album11.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Golden</p>
+                                    <p class="artist">Harry Styles</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -204,8 +205,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album12.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Thunderclouds</p>
+                                    <p class="artist">LSD</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -214,8 +215,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album13.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">THAT THAT</p>
+                                    <p class="artist">PSY (ft.Sugar)</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -224,8 +225,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album14.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Sugar</p>
+                                    <p class="artist">Zubi</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -234,8 +235,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album15.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Parachutes</p>
+                                    <p class="artist">Coldplay</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -244,8 +245,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album16.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Stay with me</p>
+                                    <p class="artist">Sam Smith</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -254,8 +255,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album17.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">Out of Time</p>
+                                    <p class="artist">Weeknd</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -264,8 +265,8 @@
                             <li>
                                 <a href="#">
                                     <p class="album_img"><img src="images/album18.png"></p>
-                                    <p class="name">Privacy</p>
-                                    <p class="artist">Cardi B</p>
+                                    <p class="name">PDA</p>
+                                    <p class="artist">John Legend</p>
                                     <p class="btn_play">play</p>
                                 </a>
                             </li>
@@ -449,17 +450,56 @@
 
     <script>
 
+
         $('.cont1 .album').slick({
-            slidesToShow: 9,
-            slidesToScroll: 2,
+            slidesToShow: 8,
+            slidesToScroll: 4,
             arrows: false,
             dots: false,
-            speed: 500,
+            speed: 700,
             autoplay: false,
             autoplaySpeed: 3000,
             pauseOnHover: true,
             infinite: true,
             vertical: false,
+            responsive: [
+                {
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 7,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 720,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+
+            ]
         });
 
 

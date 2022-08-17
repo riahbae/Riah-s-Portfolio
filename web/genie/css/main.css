@@ -276,7 +276,9 @@
     overflow: hidden;
 }
 
-.container .cont1 {}
+.container .cont1 {
+    margin-left: 220px;
+}
 
 .container .cont1 .tit {
     float: left;
@@ -309,7 +311,7 @@
     height: 250px;
     float: left;
     margin-right: 15px;
-
+    padding-top: 5px;
 }
 
 .container .cont1 .album li .album_img {
@@ -329,12 +331,12 @@
 
 .container .cont1 .album li .name {
     margin: 5px 0 0 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .container .cont1 .album li .artist {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     opacity: 0.8;
 }
@@ -366,6 +368,7 @@
 /* cont2 시작 */
 .container .cont2 {
     margin-top: 100px;
+    margin-left: 220px;
 }
 
 .container .cont2 .tit {
@@ -439,6 +442,7 @@
 /* cont3 시작 */
 .container .cont3 {
     margin-top: 150px;
+    margin-left: 220px;
 }
 
 .container .cont3 .tit {
@@ -527,9 +531,8 @@
 /* footer 시작 */
 #footer {
     padding: 150px 0 200px 0;
+    margin-left: 220px;
 }
-
-#footer {}
 
 #footer>a {
     float: left;
@@ -778,17 +781,18 @@
     }
 }
 
-@media all and (max-width:1046px) {
+/* @media all and (max-width:1046px) {
     .container .cont1 .album li {
         margin-right: 31px;
         width: calc((100% - 93px) / 4);
     }
 }
-
+ */
 @media all and (max-width:1024px) {
 
     #wrap {
         /* min-width: 769px; */
+
     }
 
     #leftWrap .LWin {
@@ -808,6 +812,10 @@
     }
 
     /*  cont1 시작  */
+    .container .cont1 {
+        margin-left: 0;
+    }
+
     .container .cont1 .tit {
         font-size: 20px;
     }
@@ -815,12 +823,13 @@
     .container .cont1 .see_all {
         background-size: 10px 10px;
         font-size: 14px;
+
     }
 
-    .container .cont1 .album li {
+    /* .container .cont1 .album li {
         margin-right: 31px;
         width: calc((100% - 93px) / 4);
-    }
+    } */
 
     /* .container .cont1 .album li {
         height: auto;
@@ -861,6 +870,10 @@
     }
 
     /*  cont2 시작  */
+    .container .cont2 {
+        margin-left: 0;
+    }
+
     .container .cont2 .tit {
         font-size: 20px;
     }
@@ -895,6 +908,10 @@
     }
 
     /*  cont3 시작  */
+    .container .cont3 {
+        margin-left: 0;
+    }
+
     .container .cont3 .tit {
         font-size: 20px;
     }
@@ -929,6 +946,10 @@
     }
 
     /* footer 시작 */
+    #footer {
+        margin-left: 0;
+    }
+
     #footer .fmenu {
         margin-left: 100px;
     }
@@ -1200,6 +1221,7 @@
         margin-bottom: 20px;
     }
 
+    /* 
     .container .cont1 .album li:nth-child(1) {
         display: none;
     }
@@ -1222,12 +1244,13 @@
 
     .container .cont1 .album li:nth-child(8) {
         display: none;
-    }
+    } */
 
     .container .cont1 .album li {
         height: auto;
         margin-right: 10px;
-        width: calc((100% - 10px) / 2);
+        /* 
+        width: calc((100% - 10px) / 2); */
     }
 
     .container .cont1 .album li:nth-child(3) {

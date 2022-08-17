@@ -204,3 +204,7 @@ img {
     content: '';
     clear: both;
 }
+
+::selection {
+    background: #00ffe5;
+}

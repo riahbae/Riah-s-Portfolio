@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,21 @@
     <title>한국전통주</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </head>
+
 <body>
     <div id="wrap">
         <div id="mainVisual">
+            <div class="slider">
+                <div class="simg"><img src="images/mainvisual.jpg"></div>
+                <div class="simg"><img src="images/mainvisual02.jpg"></div>
+            </div><!-- slider -->
             <div class="mainVisualin">
                 <a href="#" class="logo"><img src="images/logo.png"></a>
                 <ul class="gnb clear">
@@ -219,7 +231,7 @@
                     </select>
                 </div><!-- selectbox -->
                 <p>경기도 군포시 공단로 298-21 두성빌딩 3층 (금정동 689-20) | TEL : 031-448-8252 | Fax : 031-448-8232<br>
-                @Copyright by 한국전통주 All rights reserved.</p>
+                    @Copyright by 한국전통주 All rights reserved.</p>
                 <ul class="icon clear">
                     <li><a href="#"><img src="images/icon02.png"></a></li>
                     <li><a href="#"><img src="images/icon03.png"></a></li>
@@ -228,5 +240,23 @@
             </div><!-- footerin -->
         </div><!-- footer -->
     </div><!-- wrap -->
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover: true,
+                infinite: true,
+                vertical: false,
+            });
+        });
+    </script>
 </body>
+
 </html>

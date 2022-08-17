@@ -1,322 +1,651 @@
-#mainVisual{
-    width:100%; background:url(../images/mainvisual.jpg) no-repeat center center / cover;
+#mainVisual {
+    width: 100%;
+    position: relative;
+    /*  background:url(../images/mainvisual.jpg) no-repeat center center / cover; */
 }
-.mainVisualin{
-    width:1080px; height:694px;
-    margin:0 auto;
-    padding-top:29px;
-    position:relative;
+
+#mainVisual .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.mainVisualin .gnb{
-    position:absolute;
-    top:29px; left:500px;
+
+.mainVisualin {
+    width: 1080px;
+    height: 694px;
+    margin: 0 auto;
+    padding-top: 29px;
+    position: relative;
+}
+
+.mainVisualin .gnb {
+    position: absolute;
+    top: 29px;
+    left: 500px;
 }
 
 /* gnb test01 */
-.gnb .test01{position:relative;}
-.gnb .test01 .on{position:absolute; top:0; left:0; display:none;}
-.gnb .test01:hover .off{opacity:0;}
-.gnb .test01:hover .on{display:block;}
+.gnb .test01 {
+    position: relative;
+}
+
+.gnb .test01 .on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .test01:hover .off {
+    opacity: 0;
+}
+
+.gnb .test01:hover .on {
+    display: block;
+}
+
 /* gnb sub 영어로 나오기 시작 */
-.gnb .sub_test01{position:relative;}
-.gnb .sub_test01 .on_01{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test01:hover .off_01{opacity:0;}
-.gnb .sub_test01:hover .on_01{display:block;}
+.gnb .sub_test01 {
+    position: relative;
+}
 
-.gnb .sub_test02{position:relative;}
-.gnb .sub_test02 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test02:hover .off_02{opacity:0;}
-.gnb .sub_test02:hover .on_02{display:block;}
+.gnb .sub_test01 .on_01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
-.gnb .sub_test03{position:relative;}
-.gnb .sub_test03 .on_03{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test03:hover .off_03{opacity:0;}
-.gnb .sub_test03:hover .on_03{display:block;}
+.gnb .sub_test01:hover .off_01 {
+    opacity: 0;
+}
 
-.gnb .sub_test04{position:relative;}
-.gnb .sub_test04 .on_04{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test04:hover .off_04{opacity:0;}
-.gnb .sub_test04:hover .on_04{display:block;}
+.gnb .sub_test01:hover .on_01 {
+    display: block;
+}
+
+.gnb .sub_test02 {
+    position: relative;
+}
+
+.gnb .sub_test02 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test02:hover .off_02 {
+    opacity: 0;
+}
+
+.gnb .sub_test02:hover .on_02 {
+    display: block;
+}
+
+.gnb .sub_test03 {
+    position: relative;
+}
+
+.gnb .sub_test03 .on_03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test03:hover .off_03 {
+    opacity: 0;
+}
+
+.gnb .sub_test03:hover .on_03 {
+    display: block;
+}
+
+.gnb .sub_test04 {
+    position: relative;
+}
+
+.gnb .sub_test04 .on_04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test04:hover .off_04 {
+    opacity: 0;
+}
+
+.gnb .sub_test04:hover .on_04 {
+    display: block;
+}
 
 /* gnb test02 */
-.gnb .test02{position:relative; padding-right:30px;}
-.gnb .test02 .on{position:absolute; top:0; left:0; display:none;}
-.gnb .test02:hover .off{opacity:0;}
-.gnb .test02:hover .on{display:block;}
+.gnb .test02 {
+    position: relative;
+    padding-right: 30px;
+}
+
+.gnb .test02 .on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .test02:hover .off {
+    opacity: 0;
+}
+
+.gnb .test02:hover .on {
+    display: block;
+}
+
 /* gnb sub 영어로 나오기 시작 */
-.gnb .sub_test01{position:relative;}
-.gnb .sub_test01 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test01:hover .off_01{opacity:0;}
-.gnb .sub_test01:hover .on_01{display:block;}
+.gnb .sub_test01 {
+    position: relative;
+}
 
-.gnb .sub_test02{position:relative;}
-.gnb .sub_test02 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test02:hover .off_02{opacity:0;}
-.gnb .sub_test02:hover .on_02{display:block;}
+.gnb .sub_test01 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
-.gnb .sub_test03{position:relative;}
-.gnb .sub_test03 .on_03{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test03:hover .off_03{opacity:0;}
-.gnb .sub_test03:hover .on_03{display:block;}
+.gnb .sub_test01:hover .off_01 {
+    opacity: 0;
+}
 
-.gnb .sub_test04{position:relative;}
-.gnb .sub_test04 .on_04{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test04:hover .off_04{opacity:0;}
-.gnb .sub_test04:hover .on_04{display:block;}
+.gnb .sub_test01:hover .on_01 {
+    display: block;
+}
+
+.gnb .sub_test02 {
+    position: relative;
+}
+
+.gnb .sub_test02 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test02:hover .off_02 {
+    opacity: 0;
+}
+
+.gnb .sub_test02:hover .on_02 {
+    display: block;
+}
+
+.gnb .sub_test03 {
+    position: relative;
+}
+
+.gnb .sub_test03 .on_03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test03:hover .off_03 {
+    opacity: 0;
+}
+
+.gnb .sub_test03:hover .on_03 {
+    display: block;
+}
+
+.gnb .sub_test04 {
+    position: relative;
+}
+
+.gnb .sub_test04 .on_04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test04:hover .off_04 {
+    opacity: 0;
+}
+
+.gnb .sub_test04:hover .on_04 {
+    display: block;
+}
 
 /* gnb test03 */
-.gnb .test03{position:relative; padding-right:30px;}
-.gnb .test03 .on{position:absolute; top:0; left:0; display:none;}
-.gnb .test03:hover .off{opacity:0;}
-.gnb .test03:hover .on{display:block;}
-/* gnb sub 영어로 나오기 시작 */
-.gnb .sub_test01{position:relative;}
-.gnb .sub_test01 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test01:hover .off_01{opacity:0;}
-.gnb .sub_test01:hover .on_01{display:block;}
+.gnb .test03 {
+    position: relative;
+    padding-right: 30px;
+}
 
-.gnb .sub_test02{position:relative;}
-.gnb .sub_test02 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test02:hover .off_02{opacity:0;}
-.gnb .sub_test02:hover .on_02{display:block;}
+.gnb .test03 .on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .test03:hover .off {
+    opacity: 0;
+}
+
+.gnb .test03:hover .on {
+    display: block;
+}
+
+/* gnb sub 영어로 나오기 시작 */
+.gnb .sub_test01 {
+    position: relative;
+}
+
+.gnb .sub_test01 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test01:hover .off_01 {
+    opacity: 0;
+}
+
+.gnb .sub_test01:hover .on_01 {
+    display: block;
+}
+
+.gnb .sub_test02 {
+    position: relative;
+}
+
+.gnb .sub_test02 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test02:hover .off_02 {
+    opacity: 0;
+}
+
+.gnb .sub_test02:hover .on_02 {
+    display: block;
+}
 
 /* gnb test04 */
-.gnb .test04{position:relative;}
-.gnb .test04 .on{position:absolute; top:0; left:0; display:none;}
-.gnb .test04:hover .off{opacity:0;}
-.gnb .test04:hover .on{display:block;}
+.gnb .test04 {
+    position: relative;
+}
+
+.gnb .test04 .on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .test04:hover .off {
+    opacity: 0;
+}
+
+.gnb .test04:hover .on {
+    display: block;
+}
+
 /* gnb sub 영어로 나오기 시작 */
-.gnb .sub_test01{position:relative;}
-.gnb .sub_test01 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test01:hover .off_01{opacity:0;}
-.gnb .sub_test01:hover .on_01{display:block;}
+.gnb .sub_test01 {
+    position: relative;
+}
 
-.gnb .sub_test02{position:relative;}
-.gnb .sub_test02 .on_02{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test02:hover .off_02{opacity:0;}
-.gnb .sub_test02:hover .on_02{display:block;}
+.gnb .sub_test01 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
-.gnb .sub_test03{position:relative;}
-.gnb .sub_test03 .on_03{position:absolute; top:0; left:0; display:none;}
-.gnb .sub_test03:hover .off_03{opacity:0;}
-.gnb .sub_test03:hover .on_03{display:block;}
+.gnb .sub_test01:hover .off_01 {
+    opacity: 0;
+}
+
+.gnb .sub_test01:hover .on_01 {
+    display: block;
+}
+
+.gnb .sub_test02 {
+    position: relative;
+}
+
+.gnb .sub_test02 .on_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test02:hover .off_02 {
+    opacity: 0;
+}
+
+.gnb .sub_test02:hover .on_02 {
+    display: block;
+}
+
+.gnb .sub_test03 {
+    position: relative;
+}
+
+.gnb .sub_test03 .on_03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb .sub_test03:hover .off_03 {
+    opacity: 0;
+}
+
+.gnb .sub_test03:hover .on_03 {
+    display: block;
+}
+
 /* gnb sub 끝 */
 
 
-.mainVisualin .gnb>li{
-    width:110px;
-    float:left;
-    margin-right:25px;
+.mainVisualin .gnb>li {
+    width: 110px;
+    float: left;
+    margin-right: 25px;
     font-family: 'HoengseongHanu';
 }
-.mainVisualin .gnb>li:hover>a{
-    color:#555;
+
+.mainVisualin .gnb>li:hover>a {
+    color: #555;
 }
-.mainVisualin .gnb>li:nth-child(3){
-    width:90px;
+
+.mainVisualin .gnb>li:nth-child(3) {
+    width: 90px;
 }
-.mainVisualin .gnb>li:last-child{
-    margin-right:0;
+
+.mainVisualin .gnb>li:last-child {
+    margin-right: 0;
 }
-.mainVisualin .gnb>li a{
-    color:#fff;
-    font-size:20px;
-    line-height:1.5em;
+
+.mainVisualin .gnb>li a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5em;
 }
-.mainVisualin .gnb>li .sub{
-    height:0; transition:all 0.7s; overflow:hidden;
+
+.mainVisualin .gnb>li .sub {
+    height: 0;
+    transition: all 0.7s;
+    overflow: hidden;
     font-family: 'Nanum Gothic';
 }
-.mainVisualin .gnb>li:hover .sub{
-    height:160px;
+
+.mainVisualin .gnb>li:hover .sub {
+    height: 160px;
 }
-.mainVisualin .gnb>li .sub li a{
-    font-size:16px;
+
+.mainVisualin .gnb>li .sub li a {
+    font-size: 16px;
 }
+
 /* .mainVisualin .gnb>li .sub li:hover a{
     border-bottom:1px solid #555;
 } */
-.mainVisualin p{
-    color:#fff;
-    font-size:28px;
-    margin-top:110px;
-    line-height:1.5em;
-    letter-spacing:2px;
+.mainVisualin p {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 110px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
     font-family: 'JSArirangPPURI-Regular';
     /* font-family: 'HoengseongHanu'; */
 }
-.mainVisualin span{
-    font-size:38px;
+
+.mainVisualin span {
+    font-size: 38px;
 }
+
 /* mainVisual 끝 */
-#container{
-    width:100%; background:url(../images/bg_cont.jpg) no-repeat -8px center / cover;
+#container {
+    width: 100%;
+    background: url(../images/bg_cont.jpg) no-repeat -8px center / cover;
 }
-.containerin{
-    width:1080px;
-    margin:0 auto;
+
+.containerin {
+    width: 1080px;
+    margin: 0 auto;
 }
-.containerin .cont1>a{ 
-    margin-left:235px;
+
+.containerin .cont1>a {
+    margin-left: 235px;
 }
-.containerin .cont1>a:hover img{
-    background:url(../images/icon01.png) no-repeat;
-} 
-.containerin .cont1 h1{
-    font-size:36px;
-    color:#292929;
-    text-align:center;
-    margin-bottom:17px;
+
+.containerin .cont1>a:hover img {
+    background: url(../images/icon01.png) no-repeat;
+}
+
+.containerin .cont1 h1 {
+    font-size: 36px;
+    color: #292929;
+    text-align: center;
+    margin-bottom: 17px;
     font-family: 'HoengseongHanu';
 }
-.containerin .cont1 p{
-    font-size:20px;
-    font-weight:bold;
-    color:#292929;
-    text-align:center;
-    margin-bottom:77px;
+
+.containerin .cont1 p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #292929;
+    text-align: center;
+    margin-bottom: 77px;
 }
-.containerin .cont1 .box>div{
-    float:left;
-    margin-right:96px;
+
+.containerin .cont1 .box>div {
+    float: left;
+    margin-right: 96px;
 }
-.containerin .cont1 .box>div:last-child{
-    margin-right:0;
+
+.containerin .cont1 .box>div:last-child {
+    margin-right: 0;
 }
-.containerin .cont1 .box .btn{
-    display:block; width:120px; height:40px; color:#292929;
-    border:0 solid; 
-    border-radius:40px;
-    font-size:15px; font-weight:bold;
-    line-height:40px;
-    background-color:rgba(0,0,0,0.3);
-    margin:40px 0 107px 78px;
-    padding-left:20px;
-    position:relative;
-    transition:all 0.5s;
+
+.containerin .cont1 .box .btn {
+    display: block;
+    width: 120px;
+    height: 40px;
+    color: #292929;
+    border: 0 solid;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 40px 0 107px 78px;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.5s;
 }
-.containerin .cont1 .box .btn:hover{
-    background-color:#e8e2d2;
+
+.containerin .cont1 .box .btn:hover {
+    background-color: #e8e2d2;
 }
-.containerin .cont1 .box .btn img{
-    position:absolute;
-    top:50%; right:20px;
-    transform:translateY(-50%);
+
+.containerin .cont1 .box .btn img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
-.containerin .cont1 .box .img{
-    width:296px; height:314px; overflow:hidden;
+
+.containerin .cont1 .box .img {
+    width: 296px;
+    height: 314px;
+    overflow: hidden;
 }
-.containerin .cont1 .box .img img{
-    width:100%; height:auto;
-    transition:all 3s;
+
+.containerin .cont1 .box .img img {
+    width: 100%;
+    height: auto;
+    transition: all 3s;
 }
-.containerin .cont1 .box .img:hover img{
-    transform:scale(1.5);
+
+.containerin .cont1 .box .img:hover img {
+    transform: scale(1.5);
 }
-.containerin>p{
-    width:1080px; height:1px; border:1px solid #777; background-color:#777;
-    margin-bottom:107px;
-    font-size:0;
+
+.containerin>p {
+    width: 1080px;
+    height: 1px;
+    border: 1px solid #777;
+    background-color: #777;
+    margin-bottom: 107px;
+    font-size: 0;
 }
-.cont2{
-    width:1080px; margin:0 auto;
-    padding-bottom:107px;
+
+.cont2 {
+    width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 107px;
 }
-.cont2 .img_wrap{
-    width:1080px; height:555px;
-    background-color:rgba(0,0,0,0.2);
-    position:relative;
+
+.cont2 .img_wrap {
+    width: 1080px;
+    height: 555px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
 }
-.cont2 .img_wrap img{
-    margin:48px 67px;
+
+.cont2 .img_wrap img {
+    margin: 48px 67px;
 }
-.cont2 .img_wrap .pager{
-    position:absolute; bottom:16px;
-    left:50%; transform:translateX(-50%);
+
+.cont2 .img_wrap .pager {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.cont2 .img_wrap .pager li{
-    background:url(../images/pager02.png) no-repeat;
-    float:left; margin-right:5px;  
+
+.cont2 .img_wrap .pager li {
+    background: url(../images/pager02.png) no-repeat;
+    float: left;
+    margin-right: 5px;
 }
-.cont2 .img_wrap .pager li.on{
-    background:url(../images/pager01.png) no-repeat;
+
+.cont2 .img_wrap .pager li.on {
+    background: url(../images/pager01.png) no-repeat;
 }
-.cont2 .img_wrap .pager li a{
-    display:block;
-    width:16px; height:16px;
-    font-size:0;
+
+.cont2 .img_wrap .pager li a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 0;
 }
+
 /* cont2 끝 */
-#cont3{
-    width:100%; height:676px;
-    background:url(../images/img05.jpg) no-repeat center center / cover;
-    position:relative;
+#cont3 {
+    width: 100%;
+    height: 676px;
+    background: url(../images/img05.jpg) no-repeat center center / cover;
+    position: relative;
 }
-#cont3 a{
-    display:block; width:120px; height:40px;
-    border:0 solid; 
-    border-radius:40px;
-    font-size:20px; font-weight:bold;
-    color:#292929; 
-    line-height:40px;
-    background-color:rgba(0,0,0,0.3);
-    padding-left:20px;
-    position:absolute; bottom:100px;
-    left:50%; transform:translateX(-50%);
-    margin-left:-353px;
-    transition:all 0.5s;
+
+#cont3 a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: 0 solid;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #292929;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -353px;
+    transition: all 0.5s;
 }
-#cont3 a img{
-    position:absolute;
-    top:50%; right:20px;
-    transform:translateY(-50%);
+
+#cont3 a img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
-#cont3 a:hover{
-    background-color:#ff8056;
+
+#cont3 a:hover {
+    background-color: #ff8056;
 }
+
 /* cont3 끝 */
-#footer{
-    width:100%;
-    background:url(../images/footer.jpg) no-repeat center center / cover;
+#footer {
+    width: 100%;
+    background: url(../images/footer.jpg) no-repeat center center / cover;
 }
-.footerin{
-    width:1080px;
-    margin:0 auto;
-    padding:40px 0;
-    position:relative;
+
+.footerin {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
 }
-.footerin p{
-    color:#fff;
-    font-size:14px;
-    margin-top:30px;
+
+.footerin p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
 }
-.footerin ul{
-    position:absolute;
-    top:39px; right:0;
+
+.footerin ul {
+    position: absolute;
+    top: 39px;
+    right: 0;
 }
-.footerin ul li{
-    float:left;
-    margin-right:54px;
-    margin-top:60px;
+
+.footerin ul li {
+    float: left;
+    margin-right: 54px;
+    margin-top: 60px;
 }
-.footerin ul li:last-child{
-    margin-right:0;
+
+.footerin ul li:last-child {
+    margin-right: 0;
 }
-.footerin ul li:hover a{
-    opacity:0.6;
+
+.footerin ul li:hover a {
+    opacity: 0.6;
 }
+
 /* select 박스 */
-.footerin .selectbox{
+.footerin .selectbox {
     /* position:absolute; */
-    float:right;
+    float: right;
 
 }
-.footerin .selectbox select{
-    width:110px; height:26px;
-    background-color:#d95429;
-    color:#fff;
-    border:1px solid #fff;
-    padding-left:8px;
-    outline:none;
-} 
- 
+
+.footerin .selectbox select {
+    width: 110px;
+    height: 26px;
+    background-color: #d95429;
+    color: #fff;
+    border: 1px solid #fff;
+    padding-left: 8px;
+    outline: none;
+}

@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.7/css/unicons.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Niconne" />
 </head>
 
 <body>
@@ -153,25 +155,27 @@
                     프로젝트 01
                 </div> -->
                 <div class="center">
-                    <ul class="info">
-                        <li class="T01">01</li>
-                        <li class="T04">웹사이트 리뉴얼 :<span>OB맥주</span></li>
-                        <li class="T02">Website Redesign & Publishing</li>
-                        <li class="T03">기존의 웹사이트를 포토샵과 일러스트레이터를 사용하여<br>리디자인 시안을 제작한 뒤 HTML 웹 표준을 준수하여 작업했습니다.</li>
-                        <li class="T05">기존 오비맥주 웹사이트는 강조되는 파트없이 전체적으로 단조로워서 리디자인하여 제작했습니다. 오비맥주를 대표하는 제품들을 한눈에 홍보할 수
-                            있게
-                            눈에 띄는 색상과 폰트로 디자인하였고 단조로움을 없애기 위해 오비맥주 브랜드 맥주들을 비비드한 컬러감으로 배열해 보았습니다. 가독성을 살리기 위해 폰트 크기는
-                            디자인을 헤치지 않도록 지정했습니다.</li>
-                        <li class="T06">참여도</li>
-                        <li class="T07">디자인 100%, 퍼블리싱 100%</li>
-                        <li class="T08">작업 기간</li>
-                        <li class="T09">2주</li>
-                        <li class="T10">
-                            <a href="https://www.ob.co.kr/" class="btn01">기존 사이트</a>
-                            <a href="web/ob/index.html" class="btn02">리뉴얼 사이트</a>
-                            <a href="#none" class="btn03" target="_blank" onclick="openPop01()">모바일 버전</a>
-                        </li><!-- 10 -->
-                    </ul><!-- info -->
+                    <div>
+                        <ul class="info">
+                            <li class="T01">01</li>
+                            <li class="T04">웹사이트 리뉴얼 :<span>OB맥주</span></li>
+                            <li class="T02">Website Redesign & Publishing</li>
+                            <li class="T03">기존의 웹사이트를 포토샵과 일러스트레이터를 사용하여<br>리디자인 시안을 제작한 뒤 HTML 웹 표준을 준수하여 작업했습니다.</li>
+                            <li class="T05">기존 오비맥주 웹사이트는 강조되는 파트없이 전체적으로 단조로워서 리디자인하여 제작했습니다. 오비맥주를 대표하는 제품들을 한눈에 홍보할 수
+                                있게
+                                눈에 띄는 색상과 폰트로 디자인하였고 단조로움을 없애기 위해 오비맥주 브랜드 맥주들을 비비드한 컬러감으로 배열해 보았습니다. 가독성을 살리기 위해 폰트 크기는
+                                디자인을 헤치지 않도록 지정했습니다.</li>
+                            <li class="T06">참여도</li>
+                            <li class="T07">디자인 100%, 퍼블리싱 100%</li>
+                            <li class="T08">작업 기간</li>
+                            <li class="T09">2주</li>
+                            <li class="T10">
+                                <a href="https://www.ob.co.kr/" class="btn01">기존 사이트</a>
+                                <a href="web/ob/index.html" class="btn02">리뉴얼 사이트</a>
+                                <a href="#none" class="btn03" target="_blank" onclick="openPop01()">모바일 버전</a>
+                            </li><!-- 10 -->
+                        </ul><!-- info -->
+                    </div>
                     <div class="computer">
                         <div class="monitor"><img src="images/computer0.png" alt="모니터"></div>
                         <div class="webImg"><img src="images/webImg01.jpg"></div>
@@ -337,17 +341,21 @@
         </div><!-- fullpage -->
     </div><!-- wrap -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/fd345f3650.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="js/fullpage.min.js"></script>
     <script src="js/main.js"></script>
 
 
-
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript">
+
         function openPop01() {
             var popup = window.open('web/ob/index.html', '오비맥주팝업', 'width=500px,height=950px,scrollbars=yes');
         }

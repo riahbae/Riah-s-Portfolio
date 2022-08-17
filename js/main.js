@@ -1,5 +1,7 @@
 $(function () {
 
+
+
     $('#fullpage').fullpage({
         autoScrolling: true,
         scrollHorizontally: true,
@@ -46,11 +48,6 @@ $(function () {
             return false;
         })
     });
-
-
-    function openPop() {
-        var popup = window.open('http://www.naver.com', '오비맥주팝업', 'width=500,height=800,scrollbars=yes');
-    }
 
 
 
