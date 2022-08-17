@@ -493,7 +493,7 @@ body {
 #intro .center {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 50px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -503,7 +503,7 @@ body {
 #intro .center .title .tit01 {
   text-align: center;
   font-family: 'Pretendard-Black';
-  font-size: 40px;
+  font-size: 38px;
   color: #001535;
 }
 
@@ -538,7 +538,7 @@ body {
 }
 
 #intro .center .myself .Left .info li {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -560,39 +560,42 @@ body {
 }
 
 #intro .center .myself .Middle .exp>p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #001535;
   margin-bottom: 15px;
 }
 
 #intro .center .myself .Middle .edu>p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #001535;
   margin-bottom: 15px;
 }
 
+#intro .center .myself .Middle .edu {
+  margin-top: 40px;
+}
+
 #intro .center .myself .Middle .exp>div {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 #intro .center .myself .Middle .edu>div {
   display: flex;
-
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 #intro .center .myself .Middle .date {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   display: block;
   width: 72px;
 }
 
 #intro .center .myself .Middle .place {
-  font-size: 17px;
+  font-size: 16px;
   margin-left: 20px;
 }
 
@@ -606,14 +609,24 @@ body {
 
 #intro .center .myself .Right .top {
   margin-top: 70px;
+  border: 2px dashed #0d0722;
+  background-color: #fee9f7;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 10px #fee9f7;
+  padding: 25px 20px;
 }
 
 #intro .center .myself .Right .top li {
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.5px;
-  font-size: 18px;
+  font-size: 17px;
 }
+
+#intro .center .myself .Right .top li:last-child {
+  margin-bottom: 0;
+}
+
 
 #intro .center .myself .Right .bottom {
   margin-top: 100px;
@@ -697,16 +710,16 @@ body {
 }
 
 #project01 .center .info .T02 {
-  font-size: 26px;
+  font-size: 20px;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #project01 .center .info .T03 {
   font-size: 13px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
 }
 
@@ -722,10 +735,10 @@ body {
 }
 
 #project01 .center .info .T05 {
-  font-size: 17px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   width: 420px;
 }
@@ -758,13 +771,14 @@ body {
 
 #project01 .center .info .T10 {
   display: flex;
+  justify-content: space-between;
 }
 
 #project01 .center .info .T10 a {}
 
 #project01 .center .info .T10 .btn01 {
   display: block;
-  width: 163px;
+  width: 110px;
   height: 36px;
   border: 2px solid #001535;
   border-radius: 10px;
@@ -772,7 +786,6 @@ body {
   line-height: 36px;
   font-size: 14px;
   background-color: #fff;
-  margin-right: 33px;
   color: #333;
   box-shadow: 2px 2px 5px #888888;
   transition: all 0.3s;
@@ -780,7 +793,22 @@ body {
 
 #project01 .center .info .T10 .btn02 {
   display: block;
-  width: 163px;
+  width: 110px;
+  height: 36px;
+  border: 2px solid #001535;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 2px 5px #888888;
+  transition: all 0.3s;
+}
+
+#project01 .center .info .T10 .btn03 {
+  display: block;
+  width: 110px;
   height: 36px;
   border: 2px solid #001535;
   border-radius: 10px;
@@ -799,6 +827,11 @@ body {
 }
 
 #project01 .center .info .T10 .btn02:hover {
+  background-color: #fae97f;
+  color: #001535;
+}
+
+#project01 .center .info .T10 .btn03:hover {
   background-color: #fae97f;
   color: #001535;
 }
@@ -889,16 +922,16 @@ body {
 }
 
 #project02 .center .info .T02 {
-  font-size: 26px;
+  font-size: 20px;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #project02 .center .info .T03 {
   font-size: 13px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
 }
 
@@ -914,10 +947,10 @@ body {
 }
 
 #project02 .center .info .T05 {
-  font-size: 17px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   width: 420px;
 }
@@ -950,13 +983,14 @@ body {
 
 #project02 .center .info .T10 {
   display: flex;
+  justify-content: space-between;
 }
 
 #project02 .center .info .T10 a {}
 
 #project02 .center .info .T10 .btn01 {
   display: block;
-  width: 163px;
+  width: 110px;
   height: 36px;
   border: 2px solid #001535;
   border-radius: 10px;
@@ -964,7 +998,6 @@ body {
   line-height: 36px;
   font-size: 14px;
   background-color: #fff;
-  margin-right: 33px;
   color: #333;
   box-shadow: 2px 2px 5px #888888;
   transition: all 0.3s;
@@ -972,7 +1005,23 @@ body {
 
 #project02 .center .info .T10 .btn02 {
   display: block;
-  width: 163px;
+  width: 110px;
+  height: 36px;
+  border: 2px solid #001535;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 2px 5px #888888;
+  transition: all 0.3s;
+}
+
+
+#project02 .center .info .T10 .btn03 {
+  display: block;
+  width: 110px;
   height: 36px;
   border: 2px solid #001535;
   border-radius: 10px;
@@ -991,6 +1040,11 @@ body {
 }
 
 #project02 .center .info .T10 .btn02:hover {
+  background-color: #80ffe1;
+  color: #001535;
+}
+
+#project02 .center .info .T10 .btn03:hover {
   background-color: #80ffe1;
   color: #001535;
 }
@@ -1081,16 +1135,16 @@ body {
 }
 
 #project03 .center .info .T02 {
-  font-size: 26px;
+  font-size: 20px;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #project03 .center .info .T03 {
   font-size: 13px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
 }
 
@@ -1106,10 +1160,10 @@ body {
 }
 
 #project03 .center .info .T05 {
-  font-size: 17px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   width: 420px;
 }
@@ -1142,13 +1196,14 @@ body {
 
 #project03 .center .info .T10 {
   display: flex;
+  justify-content: space-between;
 }
 
 #project03 .center .info .T10 a {}
 
 #project03 .center .info .T10 .btn01 {
   display: block;
-  width: 163px;
+  width: 110px;
   height: 36px;
   border: 2px solid #0d0722;
   border-radius: 10px;
@@ -1156,7 +1211,6 @@ body {
   line-height: 36px;
   font-size: 14px;
   background-color: #fff;
-  margin-right: 33px;
   color: #333;
   box-shadow: 2px 2px 5px #888888;
   transition: all 0.3s;
@@ -1164,9 +1218,24 @@ body {
 
 #project03 .center .info .T10 .btn02 {
   display: block;
-  width: 163px;
+  width: 110px;
   height: 36px;
   border: 2px solid #0d0722;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 2px 5px #888888;
+  transition: all 0.3s;
+}
+
+#project03 .center .info .T10 .btn03 {
+  display: block;
+  width: 110px;
+  height: 36px;
+  border: 2px solid #001535;
   border-radius: 10px;
   text-align: center;
   line-height: 36px;
@@ -1183,6 +1252,11 @@ body {
 }
 
 #project03 .center .info .T10 .btn02:hover {
+  background-color: #80caff;
+  color: #001535;
+}
+
+#project03 .center .info .T10 .btn03:hover {
   background-color: #80caff;
   color: #001535;
 }
@@ -1273,16 +1347,16 @@ body {
 }
 
 #project04 .center .info .T02 {
-  font-size: 26px;
+  font-size: 20px;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #project04 .center .info .T03 {
   font-size: 13px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
 }
 
@@ -1298,10 +1372,10 @@ body {
 }
 
 #project04 .center .info .T05 {
-  font-size: 17px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   width: 420px;
 }
@@ -1466,16 +1540,16 @@ body {
 }
 
 #project05 .center .info .T02 {
-  font-size: 26px;
+  font-size: 20px;
   color: #333333;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #project05 .center .info .T03 {
   font-size: 13px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 20px;
 }
 
@@ -1491,10 +1565,10 @@ body {
 }
 
 #project05 .center .info .T05 {
-  font-size: 17px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 30px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   width: 420px;
 }
@@ -1606,7 +1680,7 @@ body {
 .tap {
   width: 60px;
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   right: 200px;
   margin-right: -50px;
   animation-name: tap;

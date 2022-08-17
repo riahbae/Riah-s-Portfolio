@@ -47,6 +47,14 @@ $(function () {
         })
     });
 
+
+    function openPop() {
+        var popup = window.open('http://www.naver.com', '오비맥주팝업', 'width=500,height=800,scrollbars=yes');
+    }
+
+
+
+
     var swiper = new Swiper(".mySwiper", {
         /* autoPlay: true,
         speed: 1000, */
