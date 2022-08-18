@@ -1,14 +1,14 @@
 #mainVisual {
     width: 100%;
     position: relative;
-    /*  background:url(../images/mainvisual.jpg) no-repeat center center / cover; */
+    background: url(../images/mainvisual.jpg) no-repeat center center / cover;
 }
 
-#mainVisual .slider {
+/* #mainVisual .slider {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 .mainVisualin {
     width: 1080px;
@@ -506,7 +506,7 @@
 }
 
 .containerin>p {
-    width: 1080px;
+    width: 1078px;
     height: 1px;
     border: 1px solid #777;
     background-color: #777;
@@ -527,16 +527,36 @@
     position: relative;
 }
 
-.cont2 .img_wrap img {
-    margin: 48px 67px;
+.cont2 .img_wrap .imgText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px;
+    z-index: 10;
+    font-family: 'HoengseongHanu';
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.cont2 .img_wrap .pager {
+.cont2 .img_wrap .image {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont2 .img_wrap .image img {
+    width: 100%;
+}
+
+/* .cont2 .img_wrap .pager {
     position: absolute;
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .cont2 .img_wrap .pager li {
     background: url(../images/pager02.png) no-repeat;

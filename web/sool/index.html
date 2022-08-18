@@ -8,21 +8,18 @@
     <title>한국전통주</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
 <body>
     <div id="wrap">
         <div id="mainVisual">
-            <div class="slider">
+            <!-- <div class="slider">
                 <div class="simg"><img src="images/mainvisual.jpg"></div>
                 <div class="simg"><img src="images/mainvisual02.jpg"></div>
-            </div><!-- slider -->
+            </div> -->
             <div class="mainVisualin">
                 <a href="#" class="logo"><img src="images/logo.png"></a>
                 <ul class="gnb clear">
@@ -205,14 +202,21 @@
                 <p>line</p>
                 <div class="cont2">
                     <div class="img_wrap">
-                        <a href="#"><img src="images/img04.jpg" class="img04"></a>
-                        <ul class="pager clear">
+                        <div class="imgText" style="writing-mode:tb-rl">
+                            요즘 핫한 전통주
+                        </div>
+                        <div class="image">
+                            <img src="images/img06.jpg" class="술01">
+                            <img src="images/img07.jpg" class="술02">
+                            <img src="images/img08.jpg" class="술03">
+                        </div>
+                        <!-- <ul class="pager clear">
                             <li class="on"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
-                        </ul><!-- pager -->
+                        </ul> -->
                     </div><!-- img_wrap -->
                 </div><!-- cont2 -->
             </div><!-- containerin -->
@@ -241,20 +245,23 @@
         </div><!-- footer -->
     </div><!-- wrap -->
 
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
     <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: false,
-                speed: 500,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                pauseOnHover: true,
-                infinite: true,
-                vertical: false,
-            });
+        $('.image').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            infinite: true,
+            vertical: false,
         });
     </script>
 </body>
