@@ -313,36 +313,90 @@ body {
 
 #wrap #R_menu {
   position: fixed;
-  right: 120px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 0;
+  top: 20px;
   z-index: 10;
-}
-
-#R_menu ul li {
   display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 15px;
-  color: #ff0077c9;
-  font-weight: bold;
-  /* text-shadow: 1px 1px 2px gray; */
-  position: relative;
+  justify-content: space-between;
 }
 
-#R_menu ul li:last-child {
-  margin-bottom: 0;
+#R_menu div {
+  text-align: center;
+  /* border: 2px solid transparent;
+  background-color: #d9ceff97;
+  border-radius: 15px;
+  width: 110px;
+  height: 40px; */
+  margin-right: 15px;
+  font-size: 14px;
+  color: #ff558b;
 }
 
-#R_menu ul li:hover .highlight:after {
+/* 
+#R_menu div:before {
+  content: '';
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
-#R_menu ul li i {
+#R_menu div:hover:before {
+  -webkit-transform: scaleY(4);
+  -moz-transform: scaleY(4);
+  -ms-transform: scaleY(4);
+  -o-transform: scaleY(4);
+  transform: scaleY(4);
+  border-bottom: solid thin #5CAAEF;
+}
+
+#R_menu div:before {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+} */
+
+
+/* 
+#R_menu div:nth-child(1) {
+  width: 80px;
+}
+
+#R_menu div:nth-child(2) {
+  width: 80px;
+}
+
+#R_menu div:nth-child(3) {
+  width: 90px;
+}
+
+#R_menu div:nth-child(4) {
+  width: 90px;
+}
+
+#R_menu div:nth-child(5) {
+  width: 80px;
+}
+
+
+#R_menu div:last-child {
+  margin-right: 0;
+}
+
+#R_menu div a:hover {
+  opacity: 1;
+} */
+
+#R_menu div a:hover .highlight:after {
+  width: 100%;
+}
+
+#R_menu div a i {
   width: 20px;
   text-align: center;
-  margin-right: 7px;
+  margin-right: 2px;
 }
+
 
 .highlight {
   display: inline-block;
@@ -354,7 +408,7 @@ body {
   width: 0;
   height: 12px;
   display: inline-block;
-  background: #f4ff5f;
+  background: #5fffda;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -489,7 +543,7 @@ body {
   position: relative;
 }
 
-#intro .L_txt {
+/* #intro .L_txt {
   position: absolute;
   top: 0;
   left: 0;
@@ -499,7 +553,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #ff007757;
-}
+} */
 
 #intro .center {
   width: 1200px;
